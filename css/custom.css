@@ -1,0 +1,224 @@
+div.navbar
+{
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
+  background-color: white;
+}
+
+/*div.navbar ul.nav
+{
+  display: inline-block;
+  float: none;
+}*/
+
+ul.nav > li 
+{
+  line-height: inherit;
+  padding: 0px 10px 0px 5px;
+  display: inline;
+}
+
+ul.nav > li > a
+{
+  display: inline;
+  color: inherit;
+}
+
+ul.nav > li > a:hover
+{
+  background-color: inherit;
+  color: #00C9D0;
+}
+
+.icon-med
+{
+  font-size: 20px;
+}
+
+div.section
+{
+  text-align: center;
+  padding: 30px 10px 80px 10px;
+  text-align: left;
+}
+
+div.main
+{
+  height: 100vh;
+  text-align: center;
+  position: fixed;
+  right: 0px;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+}
+
+div.title-box{
+  background-color: transparent;
+}
+
+div.back
+{
+  z-index: -1000;
+}
+
+p.name
+{
+  text-transform: uppercase;
+  color: white;
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding: 0px;
+  margin: 0px;
+}
+
+p.subtitle
+{
+  color: white;
+  font-size: 15px;
+  padding: 0px;
+  margin: 0px;
+}
+
+div#title
+{
+  background: #222222 url(../images/elainezhoulogo.png) 75% 50% no-repeat fixed; 
+  height: 100vh;
+}
+
+h1.title-text{
+  text-transform: lowercase;
+}
+
+a.contact{
+  color: white;
+}
+
+img.about-image{
+  max-width: 200px;
+  max-height: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*.anchor
+{
+  display: block;
+  height: 50px;
+  margin-top: -50px;
+  visibility: hidden;
+}*/
+
+div.first-content{
+  position: relative;
+  top: 100vh;
+}
+
+div#about{
+  background-color: #EEEEEE;
+}
+
+h1.title-text{
+  color: #00C9D0;
+  font-size: 48px;
+}
+
+h1{
+  font-family:'nexa_boldregular', Helvetica, sans-serif;
+  font-weight: 400;
+  color: #00C9D0;
+  margin-bottom: 0px;
+}
+
+h2{
+  font-family:'Lato', Helvetica, sans-serif;
+  font-weight: 400;
+  color: #000000;
+}
+
+h3{
+  font-family:'Lato', Helvetica, sans-serif;
+  font-weight: 300;
+  color: #222222;
+  text-transform: 
+}
+
+p{
+  font-family:'Lato', Helvetica, sans-serif;
+  font-weight: 300;
+  color: #000000;
+  letter-spacing: -0.1px;
+  padding: 10px 0px;
+}
+
+a{
+  color: #8838B0;
+}
+
+a:visited{
+  color: #53236B;
+}
+
+a:hover{
+  color: #00C9D0;
+  text-decoration: italic;
+}
+
+span.xs-show
+{
+  display: none;
+}
+
+span.xs-hide
+{
+  display: inline;
+}
+
+
+@media (max-width: 767px) {
+  span.xs-hide {
+    display: none;
+  }
+  span.xs-show {
+    display: inline;
+  }
+  ul.nav {
+    margin-top: 4px;
+  }
+}
+
+
+@font-face {
+    font-family: 'nexa_boldregular';
+    src: url('../fonts/Nexa_Free_Bold-webfont.eot');
+    src: url('../fonts/Nexa_Free_Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Nexa_Free_Bold-webfont.woff') format('woff'),
+         url('../fonts/Nexa_Free_Bold-webfont.ttf') format('truetype'),
+         url('../fonts/Nexa_Free_Bold-webfont.svg#nexa_boldregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'social_font';
+    src: url('../fonts/social_font.eot');
+    src: url('../fonts/social_font.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/social_font.ttf') format('truetype'),
+         url('../fonts/social_font.svg#nexa_boldregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body
+{
+  padding-top: 300px;
+  font-family: "Lato";
+  font-size: 13px;
+  letter-spacing: 1px;
+  font-weight: 100;
+  overflow-x: hidden;
+  height: 100%;
+}
