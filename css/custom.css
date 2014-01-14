@@ -8,11 +8,11 @@ div.navbar
   background-color: white;
 }
 
-/*div.navbar ul.nav
+div.navbar ul.nav
 {
   display: inline-block;
   float: none;
-}*/
+}
 
 ul.nav > li 
 {
@@ -33,6 +33,14 @@ ul.nav > li > a:hover
   color: #00C9D0;
 }
 
+.anchor
+{
+  display: block;
+  height: 50px;
+  margin-top: -50px;
+  visibility: hidden;
+}
+
 .icon-med
 {
   font-size: 20px;
@@ -41,23 +49,27 @@ ul.nav > li > a:hover
 div.section
 {
   text-align: center;
-  padding: 30px 10px 80px 10px;
-  text-align: left;
+  padding: 30px 15px 30px 15px;
+  position: inherit;
 }
 
 div.main
 {
-  height: 100vh;
-  text-align: center;
+  height: 100%;
   position: fixed;
-  right: 0px;
   left: 0px;
+  right: 0px;
   top: 0px;
-  width: 100%;
+  text-align: center;
+  background: #222222 url(../images/elainezhoulogo.png) 75% 50% no-repeat fixed; 
+  position: relative;
+  height: 100vh;
 }
 
 div.title-box{
-  background-color: transparent;
+  background: inherit;
+  position: relative;
+  top: 60%;
 }
 
 div.back
@@ -65,37 +77,14 @@ div.back
   z-index: -1000;
 }
 
-p.name
-{
-  text-transform: uppercase;
-  color: white;
-  font-size: 40px;
-  font-weight: 600;
-  letter-spacing: 1px;
-  padding: 0px;
-  margin: 0px;
-}
-
-p.subtitle
-{
-  color: white;
-  font-size: 15px;
-  padding: 0px;
-  margin: 0px;
-}
-
-div#title
-{
-  background: #222222 url(../images/elainezhoulogo.png) 75% 50% no-repeat fixed; 
-  height: 100vh;
-}
-
 h1.title-text{
   text-transform: lowercase;
+  color: #00C9D0;
+  font-size: 48px;
 }
 
 a.contact{
-  color: white;
+  color: #AAAAAA;
 }
 
 img.about-image{
@@ -104,26 +93,68 @@ img.about-image{
   margin-left: auto;
   margin-right: auto;
 }
-/*.anchor
-{
-  display: block;
-  height: 50px;
-  margin-top: -50px;
-  visibility: hidden;
-}*/
 
-div.first-content{
-  position: relative;
-  top: 100vh;
+div.about{
+  background-image: url('../images/lil_fiber.png');
+  background-repeat: repeat;
+/*  background-color: #EEEEEE;
+*/  position: relative;
+  top: 100%;
 }
 
-div#about{
+div.projects{
   background-color: #EEEEEE;
 }
 
-h1.title-text{
+div.project{
+    text-align: left;
+    padding: 15px;
+}
+
+.project a, a.email {
+  border-bottom:1px solid #888888;
+}
+
+.project a:hover, a.email:hover{
   color: #00C9D0;
-  font-size: 48px;
+  border-bottom:1px solid #222222;
+
+}
+
+.text-justify{
+  text-align: justify;
+}
+
+h4.project-title{
+  text-transform: uppercase;
+}
+
+div.project-image img{
+  width: 100%;
+  max-width: 600px;
+}
+
+div.project-image{
+  width: auto;
+  height: auto;
+}
+
+.socialmedia a, .socialmedia a:visited {
+  font-family: 'social_font';
+  text-decoration: none;
+  font-size: 20px;
+  color: #222222;
+}
+
+.socialmedia:hover{
+  color: #00C9D0;
+}
+
+div.footer{
+  text-align: right;
+  padding: 10px;
+  background-color: #222222;
+  color: white;
 }
 
 h1{
@@ -139,11 +170,11 @@ h2{
   color: #000000;
 }
 
-h3{
+h3, h4{
   font-family:'Lato', Helvetica, sans-serif;
   font-weight: 300;
   color: #222222;
-  text-transform: 
+  line-height: 120%;
 }
 
 p{
@@ -155,7 +186,7 @@ p{
 }
 
 a{
-  color: #8838B0;
+  color: #222222;
 }
 
 a:visited{
@@ -164,7 +195,7 @@ a:visited{
 
 a:hover{
   color: #00C9D0;
-  text-decoration: italic;
+  text-decoration: none;
 }
 
 span.xs-show
@@ -178,7 +209,7 @@ span.xs-hide
 }
 
 
-@media (max-width: 767px) {
+@media only screen and (max-width: 768px), only screen and (max-device-width: 1020px) {
   span.xs-hide {
     display: none;
   }
@@ -188,6 +219,15 @@ span.xs-hide
   ul.nav {
     margin-top: 4px;
   }
+  div.first-content{
+    position: relative;
+    top: 400px;
+  }
+  div.main
+  {
+    background-size: 35% auto;
+  }
+  
 }
 
 
@@ -212,13 +252,13 @@ span.xs-hide
     font-style: normal;
 }
 
-body
+body, html
 {
-  padding-top: 300px;
   font-family: "Lato";
   font-size: 13px;
   letter-spacing: 1px;
   font-weight: 100;
   overflow-x: hidden;
   height: 100%;
+  width: 100%;
 }
