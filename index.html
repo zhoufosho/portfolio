@@ -2,6 +2,7 @@
 <html lang="en-US">
 <head>
   <title>Elaine Zhou</title>
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" href="favicon.png">
   <link href='http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
@@ -9,33 +10,31 @@
   <link rel="stylesheet" type="text/css" href="css/custom.css">
 </head>
 <body>
-  <!-- sticky nav bar -->
-  <div class="navbar navbar-fixed-top fixed-top">
-    <ul class="nav">
-      <li>
-        <a href="#about">
-          <span class="xs-hide">About</span>
-          <span class="glyphicon glyphicon-user xs-show icon-med"></span>
-        </a>
-      </li>
-      <li>
-        <a href="#projects">
-          <span class="xs-hide">Projects</span>
-          <span class="glyphicon glyphicon-briefcase xs-show icon-med"></span>
-        </a>
-      </li>
-      <li>
-        <a href="http://resume.elainez.co">
-          <span class="xs-hide">Resume</span>
-          <span class="glyphicon glyphicon-file xs-show icon-med"></span>
-        </a>
-      </li>
-    </ul>
-  </div>
-
-  <div class="container-fluid">
+    <!-- sticky top nav bar -->
+    <div class="navbar navbar-fixed-top fixed-top">
+      <ul class="nav">
+        <li>
+          <a href="#about">
+            <span class="xs-hide">About</span>
+            <span class="glyphicon glyphicon-user xs-show icon-med"></span>
+          </a>
+        </li>
+        <li>
+          <a href="#projects">
+            <span class="xs-hide">Projects</span>
+            <span class="glyphicon glyphicon-briefcase xs-show icon-med"></span>
+          </a>
+        </li>
+        <li>
+          <a href="http://resume.elainez.co">
+            <span class="xs-hide">Resume</span>
+            <span class="glyphicon glyphicon-file xs-show icon-med"></span>
+          </a>
+        </li>
+      </ul>
+    </div>
     <!-- main landing -->
-    <div class="anchor" id="title"></div>
+    <!-- <div class="anchor" id="title"></div> -->
     <div class="section main back row">
       <div class="title-box">
         <h1 class="title-text">Elaine Zhou</h1>
@@ -43,6 +42,8 @@
       </div>
     </div>
     <!-- about section -->
+    <div class="container-fluid">
+
     <div class="anchor" id="about"></div>
     <div class="section about row fullscreen">
       <h3 class="text-center">
@@ -124,11 +125,11 @@
             <img src="images/websiteScreenshot.png" alt="portfolio-screenshot" />
           </div>
         </div>
-          <!-- -->
+          <!-- end content -->
       </div>
-  </div>
-  <div class="footer">
-    &copy; Elaine Zhou 2014
+    <div class="footer">
+      &copy; Elaine Zhou 2014
+    </div>
   </div>
   <script src="js/jquery.js"></script>
   <script src="js/bootstrap.min.js"></script>

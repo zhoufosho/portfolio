@@ -55,15 +55,10 @@ div.section
 
 div.main
 {
-  height: 100%;
-  position: fixed;
-  left: 0px;
-  right: 0px;
-  top: 0px;
+
   text-align: center;
   background: #222222 url(../images/elainezhoulogo.png) 75% 50% no-repeat fixed; 
-  position: relative;
-  height: 100vh;
+  height: 100%;
 }
 
 div.title-box{
