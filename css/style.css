@@ -1,0 +1,515 @@
+/*
+elainezhou portfolio theme
+==============================================
+Spring 2014
+(C) Elaine Zhou
+*/
+
+/* 
+ * BLUE: #00C9D0
+*/
+
+.next-page{
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  font-size: 32px;
+  padding-right: 20px;
+}
+
+.next-page img{
+  height: 45px;
+}
+
+.fill-width{
+  width: 100%; 
+    height: auto;
+    position: relative;
+}
+
+.home-name{
+  font-family: 'bebas_neueregular';
+  font-size: 72px;
+  margin-bottom: -20px;
+  /*margin-top: -15px;*/
+  text-align: center;
+  color: #00C9D0;
+  text-shadow: 1px 2px #222222;
+
+}
+
+.home-email{
+  font-weight: 100;
+  text-align: center;
+}
+
+.bebascaps{
+    font-family: 'bebas_neueregular';
+}
+
+.sticky-topbar a:hover{
+  border: none;
+  color: black;
+  font-weight: 500;
+  z-index: 1003;
+}
+
+.first-square{
+  color: black;
+  width: 100px;
+}
+
+.sticky-topbar li:first-child{
+  list-style-type: none;
+  margin-left: -10px;
+  margin-top: -5px;
+  padding-right: 7px;
+}
+
+.sticky-topbar li:first-child{
+  -webkit-filter: grayscale(100%);
+}
+
+.sticky-topbar{
+  position: fixed;
+  z-index: 1000;
+  background: #00C9D0;
+  width: 400px;
+  height: 40px;
+  top: 25px;
+  box-shadow: 1px 1px 1px #333333;
+}
+
+.sticky-topbar li{
+  float: left;
+  padding-top: 10px;
+  margin-right: 20px;
+  margin-left: 10px;
+  list-style-type: square;
+  text-transform: uppercase;
+font-weight: 500;
+letter-spacing: -.07px;
+}
+
+.nav-logo{
+  max-width: 100%;
+  max-height: 100%;
+  background: transparent;
+}
+
+.sticky-topbar p{
+  padding-top: 5%;
+  padding-left: 13%;
+}
+
+.name{
+  padding-top: 20%;
+}
+
+.introAbout{
+  padding-bottom: 60px;
+}
+
+.aboutSection{
+  color: #222222;
+  padding: 70px 20px 10px 20px;
+}
+
+.logo{
+  max-width: 100%;
+  max-height: 100%
+}
+
+.modal-body{
+  width: 500%; /* 100 * number of slides */
+  height: 90%;
+  position: relative;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+}
+
+.slide{
+  float: left;
+  width: 20%; /* 100 / number of slides */
+  overflow: hidden;
+  display: inline;
+  position: relative;
+  height: 100%;
+  /*margin-right: 5%;*/
+  padding: 10px 10px 0 10px;
+  opacity: 0;
+}
+
+.current{
+  opacity: 1;
+}
+
+.slide span{
+  float: left;
+  text-align: right;
+  font-size: 14px;
+  margin: 22px 5px 0px 10px;
+}
+
+.slide h3{
+  float: left;
+  text-align: left;
+  padding-right: 20px;
+}
+
+.slide h5{
+  text-align: center;
+  margin-top: -10px;
+  margin-bottom: -15px;
+}
+
+hr{
+  clear: both;
+}
+
+.modal-box {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0,0,0,0.8);
+  z-index: 99999;
+  /*opacity:0;*/
+  -webkit-transition: opacity 400ms ease;
+  -moz-transition: opacity 400ms ease;
+  transition: opacity 400ms ease;
+  /*pointer-events: none;*/
+  display: none;
+}
+
+div.caption{
+  margin-top: 5%;
+}
+
+div.main-right img{
+  max-height: 100%;
+  max-width: 100%;
+  width: auto;
+  margin: auto;
+}
+
+div.center-block iframe{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  display: block;
+}
+
+.modal-box:target {
+  /*opacity:1;*/
+  /*pointer-events: auto;*/
+}
+
+.modal-box > div {
+  width: 90%;
+  height: 85%;
+  position: relative;
+  margin: 5% auto;
+  border-radius: 10px;
+  background: #fff;
+  color: black;
+  padding: 13px 7px 50px 7px;
+}
+
+.center-block{
+  text-align: center;
+}
+
+.center-block img{
+  width: auto;
+  margin: auto;
+  max-height: 100%;
+  max-width: 100%;
+
+}
+
+.slide img{
+  display: inline-block;
+  vertical-align: center;
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  top: 10%;
+}
+
+.slide a{
+  font-size: 80%;
+  color: #00C9D0;
+  text-transform: uppercase;
+  font-size: 11px;
+}
+
+.slide a:visited{
+  color: #00CDD0;
+}
+
+.slide a:hover{
+  color: #222222;
+  border-bottom:1px solid #222222;
+}
+
+.modal-footer{
+  font-size: 32px;
+  text-align: center;
+}
+
+.modal-footer a{
+  color: black;
+}
+
+.hidden {
+    display: none;
+}
+
+.checkbox-img{
+  width: 40px;
+  /*-webkit-filter: opacity(0.4);*/
+}
+
+.aboutSection a{
+  color: #00C9D0;
+}
+
+.aboutSection a:hover{
+  color: #222222;
+  border-bottom:1px solid #222222;
+}
+
+a:hover{
+  color: #222222;
+}
+
+a{
+  color: white;
+}
+
+a:hover{
+  color: #00C9D0;
+  text-decoration: none;
+}
+
+a.project-filter:hover{
+  color: white;
+  text-decoration: none;
+  background-image: url(../images/checkbox-inside.png);
+  background-size: 50px 50px;
+  background-repeat:no-repeat;
+  background-position: -5px -12px;
+  padding-bottom: 5px;
+}
+
+a.active{
+  color: white;
+  text-decoration: none;
+  background-image: url(../images/checkbox-inside.png);
+  background-size: 50px 50px;
+  background-repeat:no-repeat;
+  background-position: -5px -12px;
+  padding-bottom: 5px;
+
+}
+
+
+label{
+  display: block;
+  margin-bottom: 2px;
+  font-weight: normal;
+}
+
+.homeSection{
+  padding-top: 75px;
+  text-align: center;
+}
+
+div.project-sidebar-filter {
+  font-family: 'bebas_neueregular';
+  font-size: 20px;
+}
+
+p.sidebar-title{
+  font-size: 28px;
+}
+
+div#home{
+  height: 100%;
+  width: 720px;
+  background: none;
+}
+
+div#projects{
+  height: 100%;
+  width: 960px;
+  background: #222222;
+}
+
+div#about{
+  height: 100%;
+  width: 960px;
+  background-image: url('../images/lil_fiber.png');
+  background-repeat: repeat;
+}
+
+div.section{
+  float: left;
+  position: relative;
+}
+
+div#container{
+  width: 2640px;
+  height: 100%;
+  overflow-x: scroll;
+  background: url(../images/elaineBackground.png) no-repeat left bottom fixed;
+  background-size: 720px auto;
+}
+
+div.content{
+  padding: 75px 50px 0 50px;
+  width: 100%;
+  /*width: 590px;*/
+  float: left;
+}
+
+.filters{
+  letter-spacing: -0.3px;
+  font-size: 16px;
+}
+
+div.project-sidebar-filter{
+  float: right;
+  padding-top: 100px;
+  padding-right: 15px;
+  width: 280px;
+}
+
+li.project{
+  width: 240px;
+  float: left;
+}
+
+li.project .project-image-div{
+  padding: 0px;
+  position:relative;
+
+}
+
+li.project img{
+  width: 240px;
+  height: 150px;
+  position: relative;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+li.project .project-image-div img {
+    width:100%;
+    vertical-align:top;
+}
+
+.project-image-div{
+  width: 240px;
+  height: 150px;
+  padding: 0px 15px;
+}
+
+.grayed-out{
+  opacity: 0.2;
+}
+
+
+li{
+  list-style-type: none;
+}
+
+li.project h3{
+  font-size: 14px;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+li.project p{
+  text-align: center;
+  font-size: 10px;
+  color: #999999;
+}
+
+li.project div{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+li.project div:hover{
+  border: 1px white;
+}
+
+div#projectsSection{
+  position: absolute;
+  bottom: 0px;
+  width: inherit;
+}
+
+div#projectsSection ul{
+  list-style: none;
+  padding: 0px;
+}
+
+.socialmedia a, .socialmedia a:visited {
+  font-family: 'social_font';
+  text-decoration: none;
+  font-size: 20px;
+  color: #222222;
+}
+
+.socialmedia a:hover{
+  color: #00C9D0;
+  border: none;
+}
+
+@font-face {
+    font-family: 'social_font';
+    src: url('../fonts/social_font.eot');
+    src: url('../fonts/social_font.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/social_font.ttf') format('truetype'),
+         url('../fonts/social_font.svg#nexa_boldregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'bebas_neueregular';
+    src: url('../fonts/BebasNeue-webfont.eot');
+    src: url('../fonts/BebasNeue-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/BebasNeue-webfont.woff') format('woff'),
+         url('../fonts/BebasNeue-webfont.ttf') format('truetype'),
+         url('../fonts/BebasNeue-webfont.svg#bebas_neueregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: "Lato", Helvetica, sans-serif;
+  font-weight: 500;
+  line-height: 1.1;
+  color: inherit;
+}
+
+body, html
+{
+  font-family: "Lato", Helvetica, sans-serif;
+  font-size: 13px;
+  letter-spacing: 1px;
+  font-weight: 300;
+  height: 100%;
+  width: 100%;
+  color: white;
+}

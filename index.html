@@ -7,145 +7,607 @@
   <link rel="icon" type="image/png" href="favicon.png">
   <link href='http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-  <link rel="stylesheet" type="text/css" href="css/custom.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
 </head>
 <body>
-    <!-- sticky top nav bar -->
-    <div class="navbar navbar-fixed-top fixed-top">
-      <ul class="nav">
-        <li>
-          <a href="#about">
-            <span class="xs-hide">About</span>
-            <span class="glyphicon glyphicon-user xs-show icon-med"></span>
-          </a>
-        </li>
-        <li>
-          <a href="#projects">
-            <span class="xs-hide">Projects</span>
-            <span class="glyphicon glyphicon-briefcase xs-show icon-med"></span>
-          </a>
-        </li>
-        <li>
-          <a href="http://resume.elainez.co">
-            <span class="xs-hide">Resume</span>
-            <span class="glyphicon glyphicon-file xs-show icon-med"></span>
-          </a>
-        </li>
-      </ul>
+  <div id='container'>
+    <div class='sticky-topbar'>
+        <ul>
+          <li><a href='#home' class='nav-logo'><img src='images/EZlogo.png' class='nav-logo' onmouseover='this.src="images/EZlogoBlack.png"' onmouseout='this.src="images/EZlogo.png"'></a></li>
+          <li><a href='#projects'>Projects</a></li>
+          <li><a href='#about'>About</a></li>
+          <li><a href='http://resume.elainez.co'>Resume</a></li>
+        </ul>
     </div>
-    <!-- main landing -->
-    <!-- <div class="anchor" id="title"></div> -->
-    <div class="section main back row">
-      <div class="title-box">
-        <h1 class="title-text">Elaine Zhou</h1>
-          <a class="contact" href="mailto:elainez@cs.stanford.edu">elainez@cs.stanford.edu</a>
+    <div id='home' class='section'>
+      <div class='homeSection'>
+        <div class='row-fluid'> 
+          <h1 class='home-name'>Elaine Zhou</h1>
+        </div>
+        <div class='row-fluid'> 
+          <h4 class='home-email'>elainez@cs.stanford.edu  </h4>
+        </div>
+      </div>
+      <div class='next-page'>
+        <a href='#projects'><img src='images/rightarrow.png' /></a>
       </div>
     </div>
-    <!-- about section -->
-    <div class="container-fluid">
 
-    <div class="anchor" id="about"></div>
-    <div class="section about row fullscreen">
-      <h3 class="text-center">
-        Hi I'm Elaine!
-      </h3>
-      <div class="col-md-4 col-sm-3 col-lg-2 col-lg-offset-2">
-          <img src="elaine.jpg" alt="elaine-headshot" class="img-responsive img-circle about-image">
+    <div id='projects' class='section'>
+      <div class='contentSection'>
+        <div class='content'>
+          <h3>
+            Here are some projects I've worked on. 
+          </h3>
+          <p>
+            <ul class='filters'>
+            <li>
+              <a class='project-filter active' href="#" data-type='all'>
+                <span><img src='images/checkbox.png' class='checkbox-img'/></span>All Projects
+              </a>
+            </li>
+            <li>
+              <a class='project-filter' href="#" data-type='software'>
+                <span><img src='images/checkbox.png' class='checkbox-img'/></span>Software Development
+              </a>
+            </li>
+            <li>
+              <a class='project-filter' href="#" data-type='interaction'>
+                <span><img src='images/checkbox.png' class='checkbox-img'/></span>Interaction Design
+              </a>
+            </li>
+            <li>
+              <a class='project-filter' href="#" data-type='product'>
+                <span><img src='images/checkbox.png' class='checkbox-img'/></span>Product Design
+              </a>
+            </li>
+             <li>
+              <a class='project-filter' href="#" data-type='graphic'>
+                <span><img src='images/checkbox.png' class='checkbox-img'/></span>Graphic Design
+              </a>
+            </li>
+          </ul>
+          </p>
+        </div>
       </div>
-      <div class="col-md-8 col-sm-9 col-lg-6 about-text">
-        <p class="text-justify">
+      <div id='projectsSection'>
+        <ul>
+          <li class='project interaction software'>
+            <a href='#' class='smartcart'>
+              <div class='project-div'>
+                <h3>SmartCart</h3>
+                <p>Grocery Shopping | Android Tablet App </p>
+                <div class='project-image-div'>
+                  <img src="images/smartcart.png" />
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class='project interaction software'>
+            <a href='#' class='discoveroute'>            
+              <div class='project-div'>
+                <h3>discoveroute</h3>
+                <p> Path-Based Location Search | Mobile Web App</p>
+                <div class='project-image-div'>
+                  <img src="images/discoverouteIPhone.png" />
+                </div>
+              </div> 
+            </a>                     
+          </li>
+          <li class='project research'>
+            <a href='#' class='bdp-research'>            
+              <div class='project-div'>
+                <h3>Brainstorm, Define, Prototype</h3>
+                <p>Design Processes | Research Study </p>              
+                <div class='project-image-div'>
+                  <img src="images/hciresearchposter.png" />
+                </div>
+              </div>  
+            </a>
+          </li>
+          <li class='project software interaction'>
+            <a href='#' class='website'>            
+              <div class='project-div'>
+                <h3>Personal Portfolio</h3> 
+                <p> You're Here! | Website </p>             
+                <div class='project-image-div' >
+                  <img src="images/websiteScreenshot.png" />
+                </div>
+              </div>    
+            </a>                    
+          </li>
+          <li class='project interaction graphic'>
+            <a href='#' class='sixdegree'>            
+              <div class='project-div'>
+                  <h3>SixDegree</h3> 
+                  <p>Relationship Strength Tool | App Concept </p>
+                <div class='project-image-div'>
+                  <img src="images/sixdegreeRecruiter.png" />
+                </div>
+              </div> 
+            </a>                       
+          </li>
+          <li class='project product'>
+            <a href='#' class='rock'>                        
+              <div class='project-div'>
+                <h3> Nautilus </h3>
+                <p> Snug Rock Container | Form Exporation </p>  
+                <div class='project-image-div' >
+                  <img src="images/rockcontainer.jpg" />
+                </div>
+              </div>  
+            </a>                      
+          </li>
+          <li class='project product'>
+            <a href='#' class='journal'>                        
+              <div class='project-div'>
+                <h3> Writer's Block </h3>
+                <p> Laser-Cut Wooden Journal | Product Design </p>              
+                <div class='project-image-div' >
+                  <img src="images/journal.jpg" />
+                </div>  
+              </div>   
+            </a>                                                
+          </li>
+          <li class='project graphic'>
+              <a href='#' class='graphics'>                        
+              <div class='project-div'>
+                <h3>Retail Poster Collective</h3>
+                <p> Posters for Retail Marketing</p>              
+                <div class='project-image-div' >
+                  <img src="images/shoelandThumbnail.png" />
+                </div>
+              </div>
+            </a>                                                
+          </li>
+        </ul>
+      </div>
+    </div>
 
-          Born and raised in Orlando, Florida, I've become a California convert. I'm currently a Junior pursuing a B.S. in Computer Science from Stanford University. My concentration is in Human-Computer Interaction, and I strive for clean, intuitive, user-centered design.<br /><br />
-
-          I started my career trek as a science fair geek, loving the analytical puzzles, but disliking the monotony of lab work and slow pace of progress. After coming to Stanford, I've been able to explore many newfound interests -- programming, the entrepreneurial spirit that drives the Bay, and the creativity that abounds. <br /><br />
-
+    <div id='about' class='section aboutSection'>
+      <div class='row-fluid'>
+        <div class='col-xs-offset-2 col-xs-5 introAbout'>
+          <div class='name'>
+          <h3> Hi there! I'm Elaine. </h3>
+          </div>
+        </div>
+        <div class='col-xs-4 introAbout'>
+          <img src='images/EZlogoBlack.png' class='logo'/>
+        </div>
+      </div>
+      <div class='row-fluid'>
+        <div class='col-xs-4'>
+        <p>
+          I'm currently a Junior pursuing a B.S. in Computer Science from Stanford University. My concentration is in Human-Computer Interaction, and I strive for compelling content and intuitive user-centered design. <br /><br />
+        </div>
+        <div class='col-xs-4'><p>
+          I started my career trek as a science fair geek, loving the analytical puzzles, but disliking the monotony of lab work and slow pace of progress. After coming to Stanford, I've been able to explore many newfound interests -- programming, the entrepreneurial spirit that drives the Bay, and the creativity that abounds. <br /><br /></p>
+        </div>
+        <div class='col-xs-4'><p>
           I'll admit that I'm still in the process of figuring out what I want to do and how to use what I've learned. I know I have a lot of different interests, but I hope to gain more experiences in these fields, tackling tough problems in the interplay between people and technology.
         </p>
-        <div class='col-md-8 contact'>
-          <p>Feel free to contact me at <a href="mailto:elainez@cs.stanford.edu" class="email">elainez@cs.stanford.edu</a>.</p>
         </div>
-        <div class='col-md-4 socialmedia'>
+      </div>
+      <div class='row-fluid'>
+        <div class='col-xs-8 contact text-center'>
+          <p>My resume can be found <a href='http://resume.elainez.co'>here</a>. Feel free to contact me at <a href="mailto:elainez@cs.stanford.edu" class="email">elainez@cs.stanford.edu</a>.</p>
+        </div>
+        <div class='col-xs-4 socialmedia text-center'>
           <a href="http://facebook.com/zhoufosho">F</a>
           <a href="http://www.flickr.com/photos/106006152@N02/">n</a>
           <a href="http://instagram.com/zhoufosho">&#8482;</a>
           <a href="http://www.linkedin.com/pub/elaine-zhou/31/3b8/538">l</a>
         </div>
-        </div>
       </div>
-      <!-- projects section -->
-      <div class="anchor" id="projects"></div>
-      <div class="section projects row">
-        <h3 class="text-center">
-          Here are some projects that I've worked on.
-        </h3>
-        <!-- smartcart -->
-        <div class="row project">
-          <div class="col-md-4 col-sm-3 col-lg-4 col-lg-offset-2 project-text">
-              <h4 class="project-title"><a href="http://smartcart247.weebly.com/">SmartCart</a></h4>
-              <p> SmartCart is smart shopping tablet app that guides users through a grocery store. The app helps users in locate items and allows them to purchase items at the cart.  <br /><br />
-              Android Java | <i>Winter 2013</i>
-              </p>
-          </div>
-          <div class="col-md-8 col-sm-9 col-lg-4 project-image">
-            <img src="images/smartcart.png" alt="smartcart-sideview"/>
-          </div>
-        </div>
-        <!-- discoveroute -->
-        <div class="row project">
-          <div class="col-md-4 col-sm-3 col-lg-4 col-lg-offset-2 project-text">
-              <h4 class="project-title"><a href="http://discoveroute.herokuapp.com/">discoveroute</a></h4> <span><p><i>Work in Progress</i></p></span>
-              <p> In old spaces, find new places. Discoveroute finds interesting places to pass the time along your typical or atypical routes and lets you know how long you can stay there. <br /><br />
-              Node.js, Javascript, MonogoDB, Bootstrap | <i> Winter 2014 </i>
-              </p>
-          </div>
-          <div class="col-md-8 col-sm-9 col-lg-4 project-image">
-            <img src="images/discoverouteScreenshot.png" alt="discoveroute" style="width: 60%" class="center-block"/>
-          </div>
-        </div>
-        <!-- baudio -->
-        <div class="row project">
-          <div class="col-md-4 col-sm-3 col-lg-offset-2 project-text">
-              <h4 class="project-title"><a href="http://cs247-p2-shadow-sequencer.googlecode.com/git/sequencer.html">baudio</a></h4>
-              <p> Baudio brings an interactive and physical element to experience music, letting your body fully embrace the sounds. Control the highs, mids, and lows of the music with your body. <br /><br />
-              Javascript, d3 | <i>Winter 2013</i>
-              </p>
-          </div>
-          <div class="col-md-8 col-sm-9 col-lg-4 project-image">
-            <img src="images/baudioScreenshot.png" alt="baudio-screenshot"/>
-          </div>
-        </div>
-        <!-- brainstorm, define, prototype -->
-        <div class="row project">
-          <div class="col-md-4 col-sm-3 col-lg-offset-2 project-text">
-              <h4 class="project-title"><a href="http://dl.acm.org/citation.cfm?id=2514732">Brainstorm, Define Prototype: Timing Constraints to Balance Appropriate and Novel Design</a></h4>
-              <p> In a group of two, I studied the role of delaying constraints in effective design methodologies. The project was selected to present at 2013 ACM UIST in St. Andrews, Scotland. <br /><br />
-              Spring - Fall 2013 <br />
-              </p>
-          </div>
-          <div class="col-md-8 col-sm-9 col-lg-4 project-image">
-            <img src="images/hciresearchposter.png" alt="ez-2013-research-poster" class="img-responsive pull-right"/>
-          </div>
-        </div>
-        <!-- website -->
-        <div class="row project">
-          <div class="col-md-4 col-sm-3 col-lg-offset-2 project-text">
-              <h4 class="project-title"><a href="https://github.com/zhouel/portfolio">Personal Website</a></h4>
-              <p> This is currently the first iteration of my personal website. I'm constantly on the lookout for new ideas and styles of expressing my work. <br /><br />
-              Bootstrap, HTML, CSS | <i>Winter 2014</i>
-              </p>
-          </div>
-          <div class="col-md-8 col-sm-9 col-lg-4 project-image">
-            <img src="images/websiteScreenshot.png" alt="portfolio-screenshot" />
-          </div>
-        </div>
-          <!-- end content -->
-      </div>
-    <div class="footer">
-      &copy; Elaine Zhou 2014
     </div>
   </div>
+
+<!-- modals -->
+  <div id='smartcart' class='modal-box'>
+    <div>
+      <a href='#' title="Close" class="close">X</a><br />
+      <div class='modal-body project-carousel container-fluid'>
+        <div class='slide current row-fluid'>
+          <div class='col-xs-12 project-title'>
+            <h3>SmartCart</h3>
+            <span class='label label-info'>CS247 Instructor's Choice Award</span>
+            <hr>
+          </div>
+          <div class='col-lg-6 col-md-12'>             
+            <p> 
+            <b>Project URL:</b> <a href='http://smartcart247.weebly.com/'>View Website</a><br />
+            <b>Source Code:</b> <a href='https://github.com/cs247stanford/smartcart'>View on GitHub </a><br /><br />
+            Android Java | <i>Winter 2013</i><br />
+            </p>
+            <p> SmartCart is a smart shopping tablet app that guides users through a grocery store. The app helps users to locate items and allows them to purchase items at the cart. <br /><br />
+            Needfinding in this project began with talking with shoppers about supermarket frustrations, following their shopping habits, and talking with employees about self-checkout hassles and inefficiencies. SmartCart then set out to tackle two main problems.<br />
+            1. Does SmartCart help users find what they need more efficiently?<br />
+            2. Does SmartCart make shopping less frustrating?
+            </p>
+          </div>
+          <div class='col-lg-6 col-md-12'>
+            <div class='center-block'>
+            <iframe width="560" height="315" src="http://www.youtube.com/embed/7QvktffdVp4" frameborder="0" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+        <div class='slide'>
+          <div class='center-block'><img src='images/smartcartposter.png' />
+          </div>
+        </div>
+        <div class='slide'>
+          <div class='center-block'><img src='images/smartcartHiDef.jpg' />
+          </div>
+          <div class='center-block caption'>
+            Software prototypes were tested with shoppers in Safeway store. Users highlighted vague interface problems related to checkout.
+          </div>
+        </div>
+        <div class='slide container-fluid'>
+          <div class='row-fluid center-block'>
+            <div class='col-sm-12 caption'><p>Many usability issues prompted the need for a hardware encasing. Laser-cut acrylic sheets were used to make an encasing fit just right for the shopping cart.</p>
+            </div>
+          </div>
+          <div class='row-fluid'>
+            <div class='col-xs-3 col-md-3'>
+              <img src='images/smartcart/test1.jpg' />
+            </div>
+            <div class='col-xs-3 col-md-3'>
+              <img src='images/smartcart/test2.jpg' />
+            </div>
+            <div class='col-xs-3 col-md-3'>
+              <img src='images/smartcart/case2.jpg' style='height: 105%'/>
+            </div>
+            <div class='col-xs-3 col-md-3'>
+              <img src='images/smartcart/case1.jpg' />
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class='modal-footer'>
+        <a class='prev'><span class='glyphicon glyphicon-chevron-left' /></a>
+        <a class='next'><span class='glyphicon glyphicon-chevron-right' /></a>
+      </div>
+    </div>
+  </div>
+  <div id='discoveroute' class='modal-box'>
+    <div>
+      <a href='#' title="Close" class="close">X</a><br />
+      <div class='modal-body project-carousel'>
+        <div class='slide current row-fluid'>
+          <div class='col-xs-12 project-title'>
+            <h3>discoveroute</h3>
+            <span class='label label-info'>CS147 Best Interaction Design </span>
+            <span class='label label-info'>CS147 Best Poster Design </span>
+            <hr>
+          </div>
+          <div class='col-sm-6 col-xs-12'>             
+            <p> 
+            <b>Project URL:</b> <a href='http://discoveroute.herokuapp.com/'>discoveroute.com</a><br />
+            <b>Source Code:</b> <a href='https://github.com/hwray/discoveroute'>View on GitHub </a><br /><br />
+            Node.js, Javascript, MongoDB, Bootstrap | <i>Winter 2014</i><br />
+            </p>
+            <p> discoveroute is a place-discovery mobile web application to help the curious traveler explore places along routes by offering path-based destination searches. Find new places by old spaces. <br /><br />
+            Needfinding in this project began with talking with people planning their outings. Typically, people research an areas close to their starting point or end destination on Google Maps to make the most of travel time. Those who try to stop at places enroute expressed frustration due to lack of tools searching on a path between start and end.<br /><br />
+            Thus, discoveroute's aim is to help people maximize their journey exploration and optimize travel time. 
+            </p>
+          </div>
+          <div class='col-sm-6 col-xs-12'>
+            <div class='center-block'><img src='images/discoveroutePosterFinal.png' />
+            </div>
+          </div>
+        </div>
+        <div class='slide'>
+          <h5>Final Product</h5><br />
+          <div class='center-block'><img src='images/discoverouteDisplays.png' /><br />
+          </div>
+        </div>
+        <div class='slide'>
+          <div class='col-sm-12 col-md-4'>
+            <p>User Testing revealed a few usability issues that were fixed for the final version. <br /><br />One problem was confusion in selecting categories. The original version was a chromatic display that showed a thin white border around a selected category. This was too subtle a response. <br /><br />
+            After running an A/B test through Google Analytics, number of clicks on a monochromatic redesign versus the original were measured. The monochrome version had clearer actions and resulted in less button mashing.
+            </p>
+          </div>
+          <div class='col-sm-6 col-md-4 center-block'>
+            <img src='images/discoverouteUserTesting.png' />
+          </div>
+          <div class='col-sm-6 col-md-4 center-block'>
+            <img src='images/monochromeDiscoveroute.png' />
+          </div>
+        </div>
+        <div class='slide'>
+          <div class='col-sm-12'>
+            <h5>Rough UI Mockups</h5><br /><br />
+            <div class='center-block'>
+            <img src='images/discoverouteLowFi.png' />
+            </div>
+          </div>
+        </div>
+        <div class='slide'>
+          <div class='col-sm-12'>
+            <h5>Paper Prototypes</h5><br />
+            <div class='center-block'>
+            <img src='images/discoveroutePaperMockups.png' />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class='modal-footer'>
+        <a class='prev'><span class='glyphicon glyphicon-chevron-left' /></a>
+        <a class='next'><span class='glyphicon glyphicon-chevron-right' /></a>
+      </div>
+    </div>
+  </div>
+  <div id='bdp-research' class='modal-box'>
+    <div>
+      <a href='#' title="Close" class="close">X</a><br />
+      <div class='modal-body project-carousel'>
+        <div class='slide current row-fluid'>
+          <div class='col-xs-12 project-title'>
+            <h3>Brainstorm, Define, Prototype</h3>
+            <span class='label label-info'>2013 ACM UIST Poster Presenter </span>
+            <hr>
+          </div>
+          <div class='col-sm-6 col-xs-12'>             
+            <p> 
+            <b>Paper URL:</b> <a href='http://dl.acm.org/citation.cfm?id=2514732'>View Paper</a><br />
+            Research Project | <i>Spring 2013</i><br />
+            </p>
+            <p> 
+            In a group of two, I studied the role of delaying constraints in effective design methodologies. Groups presented to narrowed constraints at various stages in the design process yielded results of varying novelty and effectiveness. Results indicate that there is the possibility of 'latent design' at play, and those who brainstormed and prototyped before receiving the narrow constraints yielded results that were both more novel and more appropriate than other groups. <br /><br />
+            I presented this research project at the 2013 ACM Symposium on User Interface Software Technology in St. Andrews, Scotland. 
+            </p>
+          </div>
+          <div class='col-sm-6 col-xs-12'>
+            <div class='center-block'><img src='images/UIST2014.JPG' />
+            </div>
+          </div>
+        </div>
+        <div class='slide'>
+          <div class='col-sm-12'>
+            <h5>Poster Presentation</h5><br />
+            <div class='center-block'>
+            <img src='images/hciresearchposter.png' />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class='modal-footer'>
+        <a class='prev'><span class='glyphicon glyphicon-chevron-left' /></a>
+        <a class='next'><span class='glyphicon glyphicon-chevron-right' /></a>
+      </div>
+    </div>
+    </div>
+  </div>
+  <div id='sixdegree' class='modal-box'>
+    <div>
+      <a href='#' title="Close" class="close">X</a><br />
+      <div class='modal-body project-carousel'>
+        <div class='slide current row-fluid'>
+          <div class='col-xs-12 project-title'>
+            <h3>Six Degree</h3>
+            <hr>
+          </div>
+          <div class='col-sm-6 col-xs-12'>             
+            <p> 
+            <b>Paper URL:</b> <a href='http://sixdegr.ee'>sixdegr.ee</a><br />
+            Application Concept | <i>Winter 2014</i><br />
+            </p>
+            <p> 
+            SixDegree is a concept for a web service that allows you to traverse and filter people in your network with rich, semantic understand of your relationships using natural-language formulated queries. The platform weights the strength of relationships and intelligently determines the best way for one to reach desired contacts, companies, or industries.<br /><br />
+            </p>
+          </div>
+          <div class='col-sm-6 col-xs-12'>
+            <div class='center-block'><img src='images/sixdegree.png' />
+            </div>
+          </div>
+        </div>
+        <div class='slide'>
+          <div class='center-block'>
+            <h5>Job Seeker User Interface</h5><br /><br />
+            <iframe width="840" height="473" src="http://www.youtube.com/embed/oX1zUhBw6ak" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class='slide'>
+          <div class='center-block'>
+            <h5>Recruiter User Interface</h5><br /><br />
+            <iframe width="840" height="473" src="http://www.youtube.com/embed/oX1zUhBw6ak" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+      <div class='modal-footer'>
+        <a class='prev'><span class='glyphicon glyphicon-chevron-left' /></a>
+        <a class='next'><span class='glyphicon glyphicon-chevron-right' /></a>
+      </div>
+    </div>
+    </div>
+  </div>
+  <div id='website' class='modal-box'>
+    <div>
+      <a href='#' title="Close" class="close">X</a><br />
+      <div class='modal-body project-carousel'>
+        <div class='slide current row-fluid'>
+          <div class='col-xs-12 project-title'>
+            <h3>Personal Portfolio</h3>
+            <hr>
+          </div>
+          <div class='col-sm-6 col-xs-12'>             
+            <p> 
+            <b>Old Portfolio URL:</b> <a href='http://stanford.edu/~ezhou/portfolio'>elainez.co/portfolio</a><br />
+            Bootstrap, CSS, HTML | <i>Winter 2014</i><br />
+            </p>
+            <p> 
+             What you're seeing here now is the latest of my portfolio. You can still see an older version of my corner of the Internet, which I'm still quite fond of. 
+            </p>
+          </div>
+          <div class='col-sm-6 col-xs-12'>
+            <div class='center-block'><img src='images/websiteScreenshot.png' />
+            </div>
+          </div>
+        </div>
+        <!-- <div class='slide'>
+          <div class='col-sm-12'>
+            <div class='center-block'>
+            <img src='images/discoveroutePaperMockups.png' />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class='modal-footer'>
+        <a class='prev'><span class='glyphicon glyphicon-chevron-left' /></a>
+        <a class='next'><span class='glyphicon glyphicon-chevron-right' /></a>
+      </div> -->
+    </div>
+    </div>
+  </div>
+  <div id='rock' class='modal-box'>
+    <div>
+      <a href='#' title="Close" class="close">X</a><br />
+      <div class='modal-body project-carousel'>
+        <div class='slide current row-fluid'>
+          <div class='col-xs-12 project-title'>
+            <h3>Nautilus</h3>
+            <hr>
+          </div>
+          <div class='col-sm-6 col-xs-12'>             
+            <p> 
+            <b>Design Brief: </b> Create a perfectly-fitting container for a given rock, and nothing else. <br />
+            Product Design | <i>Winter 2013</i><br />
+            </p>
+            <p> 
+              Nautilus is composed entirely of laser-cut 1/16" balsa wood.
+              <br /><br />
+              I received a rock of a muted sea-green, remniscent of salty sea waves at their peak, about to crash. I wanted an open, monochrome container to highlight the color and geometric consistency of the rock.  
+            </p>
+          </div>
+          <div class='col-sm-6 col-xs-12'>
+            <div class='center-block'><img src='images/nautilus/topview.jpg' />
+            </div>
+          </div>
+        </div>
+        <div class='slide'>
+          <div class='center-block fill-width'>
+            <img src='images/nautilus/front.JPG' />
+          </div>
+        </div>
+        <div class='slide'>
+          <div class='center-block'>
+            <img src='images/nautilus/center.JPG' />
+          </div>
+        </div>
+        <div class='slide'>
+          <div class='center-block'>
+            <img src='images/nautilus/back.JPG' />
+          </div>
+        </div>
+      </div>
+      <div class='modal-footer'>
+        <a class='prev'><span class='glyphicon glyphicon-chevron-left' /></a>
+        <a class='next'><span class='glyphicon glyphicon-chevron-right' /></a>
+      </div>
+    </div>
+    </div>
+  </div>
+  <div id='journal' class='modal-box'>
+    <div>
+      <a href='#' title="Close" class="close">X</a><br />
+      <div class='modal-body project-carousel'>
+        <div class='slide current row-fluid'>
+          <div class='col-xs-12 project-title'>
+            <h3>Writer's Block</h3>
+            <hr>
+          </div>
+          <div class='col-sm-6 col-xs-12'>             
+            <p> 
+            Product Design | <i>Winter 2013</i><br />
+            </p>
+            <p> 
+            BLAH BLAH BLAH.<br /><br />
+            </p>
+          </div>
+          <div class='col-sm-6 col-xs-12'>
+            <div class='center-block'><img src='images/journal/journal.jpg' />
+            </div>
+          </div>
+        </div>
+        <div class='slide'>
+          <div class='center-block fill-width'>
+            <img src='images/journal/spine.JPG' />
+          </div>
+        </div>
+        <div class='slide'>
+          <div class='center-block'>
+            <img src='images/journal/topview.JPG' />
+          </div>
+        </div>
+        <div class='slide'>
+          <div class='center-block'>
+            <img src='images/journal/frontcover.JPG' />
+          </div>
+        </div>
+      </div>
+      <div class='modal-footer'>
+        <a class='prev'><span class='glyphicon glyphicon-chevron-left' /></a>
+        <a class='next'><span class='glyphicon glyphicon-chevron-right' /></a>
+      </div>
+    </div>
+    </div>
+  </div>
+  <div id='graphics' class='modal-box'>
+    <div>
+      <a href='#' title="Close" class="close">X</a><br />
+      <div class='modal-body project-carousel container-fluid'>
+        <div class='slide current row-fluid container-fluid'>
+            <div class='col-md-6 col-sm-12 project-title'>
+              <h3>Poster Design Collective</h3> 
+              <hr>
+            <!-- </div>
+            <div class='col-md-6 col-sm-12'>  -->            
+              <p> 
+              <b>Client:</b> <a href='http://www.shoeland.com/'>Shoe Land</a><br />
+              Photoshop | <i>Summers 2011, 2012</i><br />
+              </p>
+              <p> Shoe Land is a shoe retail chain in Florida and Georgia. <br /><br/>
+              I went through their 1000+ inventory to find merchandise for promotional marketing material. I created displays, photographed them, and designed a number of poster campaigns that ran through the summers and falls of 2011 and 2012.  </p>
+            </div>
+            <div class='col-md-6 col-sm-12'>
+              <div class='center-block main-right'>
+                <img src='images/posters/1bSpringPoster12.jpg' />
+              </div>
+            </div>
+          </div>
+          <div class='slide'>
+            <div class='col-sm-6 center-block'><img src='images/posters/Fall2013C.png' />
+            </div>
+            <div class='col-sm-6 center-block'><img src='images/posters/Fall2013A.png' />
+            </div>
+          </div>
+          <div class='slide'>
+            <div class='col-sm-6 center-block'><img src='images/posters/Fall12Poster1.jpg' />
+            </div>
+            <div class='col-sm-6 center-block'><img src='images/posters/Fall12Poster2.jpg' />
+            </div>
+          </div>
+          <div class='slide'>
+            <div class='col-sm-6 center-block'><img src='images/posters/1bSpringPoster12.jpg' />
+            </div>
+            <div class='col-sm-6 center-block'><img src='images/posters/4SpringPoster12.jpg' />
+            </div>
+          </div>
+        </div>
+        <div class='modal-footer'>
+          <a class='prev'><span class='glyphicon glyphicon-chevron-left' /></a>
+          <a class='next'><span class='glyphicon glyphicon-chevron-right' /></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- javascripts -->
   <script src="js/jquery.js"></script>
   <script src="js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
   <!-- ga -->
   <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
